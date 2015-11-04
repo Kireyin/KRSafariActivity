@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
 
   s.source              = { :git => "https://github.com/Kireyin/KRSafariActivity.git", :tag => "0.0.1" }
 
-  s.source_files        = "KRSafariActivity/*.{swift}"
-  s.public_header_files = "KRSafariActivity/*.h"
-  s.resources           = "KRSafariActivity/KRSafariActivity.bundle"
+  s.source_files        = "KRSafariActivity/KRSafariActivity/*.{swift}"
+  s.public_header_files = "KRSafariActivity/KRSafariActivity/*.h"
+  s.resources           = "KRSafariActivity/KRSafariActivity/KRSafariActivity.bundle"
   s.frameworks          = "UIKit"
 
 end
