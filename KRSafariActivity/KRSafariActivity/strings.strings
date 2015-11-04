@@ -1,0 +1,9 @@
+/* 
+  strings.strings
+  KRSafariActivity
+
+  Created by Alexandre Brispot on 04/11/15.
+  Copyright © 2015 Kireyin (Alexandre Brispot). All rights reserved.
+*/
+
+"activityTitle" = "Open in Safari";
