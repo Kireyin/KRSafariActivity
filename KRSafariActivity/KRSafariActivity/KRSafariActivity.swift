@@ -22,9 +22,23 @@
 
 import Foundation
 
+/**
+   #### A UIActivity subclass that opens URLs in Safari
+   You can specify a custom at init if you don't want to use the default icon
+*/
 public class KRSafariActivity: UIActivity {
    private var url: NSURL?
+   private var image: UIImage?
    public let KRSafariActivityType: String = "KRSafariActivity"
+   
+   public override init() {
+      super.init()
+   }
+   
+   public init(image: UIImage) {
+      super.init()
+      self.image = image
+   }
    
    public override func activityType() -> String? {
       return KRSafariActivityType
@@ -35,6 +49,9 @@ public class KRSafariActivity: UIActivity {
    }
    
    public override func activityImage() -> UIImage? {
+      if let image = self.image {
+         return image
+      }
       return UIImage(named: "KRSafariActivityIcon", inBundle: NSBundle(forClass: KRSafariActivity.self), compatibleWithTraitCollection: nil)
    }
    

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                = "KRSafariActivity"
-  s.version             = "0.0.1"
+  s.version             = "1.1.0"
   s.summary             = "A UIActivity subclass that opens URLs in Safari - in Swift"
 
   s.description         = <<-DESC
