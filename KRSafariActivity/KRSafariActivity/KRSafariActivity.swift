@@ -22,6 +22,10 @@
 
 import Foundation
 
+/**
+   #### A UIActivity subclass that opens URLs in Safari
+   You can specify a custom at init if you don't want to use the default icon
+*/
 public class KRSafariActivity: UIActivity {
    private var url: NSURL?
    private var image: UIImage?
