@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "KRSafariActivity.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "KRSafariActivityIcon@2x.png",
+      "filename" : "KRSafariActivity@2x.png",
       "scale" : "2x"
     },
     {
