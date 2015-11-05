@@ -10,12 +10,23 @@ Pod::Spec.new do |s|
                           DESC
 
   s.homepage            = "https://github.com/Kireyin/KRSafariActivity"
-  s.license             = { :type => "MIT", :file => "LICENSE" }
-  s.author              = { "Alexandre Brispot" => "abrispot@gmail.com" }
+  
+  s.license             = { 
+                            :type => "MIT", 
+                            :file => "LICENSE" 
+                          }
+
+  s.author              = { 
+                            "Alexandre Brispot" => "abrispot@gmail.com" 
+                          }
+
   s.platform            = :ios
   s.ios.deployment_target = '8.0'
 
-  s.source              = { :git => "https://github.com/Kireyin/KRSafariActivity.git", :tag => "0.0.1" }
+  s.source              = { 
+                            :git => "https://github.com/Kireyin/KRSafariActivity.git", 
+                            :tag => s.version.to_s 
+                          }
 
   s.source_files        = "KRSafariActivity/**/*.{swift}"
   # s.public_header_files = "KRSafariActivity/**/*.{h}"
