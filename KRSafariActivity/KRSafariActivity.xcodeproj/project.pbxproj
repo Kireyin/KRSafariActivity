@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		9FFB70E71BEA608200B02E29 /* KRSafariActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB70E61BEA608200B02E29 /* KRSafariActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FFB70EF1BEA612B00B02E29 /* KRSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB70EE1BEA612B00B02E29 /* KRSafariActivity.swift */; };
-		9FFB70F11BEA62FC00B02E29 /* strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB70F01BEA62FC00B02E29 /* strings.strings */; };
-		9FFB70F31BEA642E00B02E29 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB70F21BEA642E00B02E29 /* images.xcassets */; };
+		9FFB70FB1BEB616100B02E29 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB70F81BEB616100B02E29 /* en.lproj */; };
+		9FFB70FC1BEB616100B02E29 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB70F91BEB616100B02E29 /* fr.lproj */; };
+		9FFB70FD1BEB616100B02E29 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB70FA1BEB616100B02E29 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +19,9 @@
 		9FFB70E61BEA608200B02E29 /* KRSafariActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRSafariActivity.h; sourceTree = "<group>"; };
 		9FFB70E81BEA608200B02E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFB70EE1BEA612B00B02E29 /* KRSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSafariActivity.swift; sourceTree = "<group>"; };
-		9FFB70F01BEA62FC00B02E29 /* strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = strings.strings; sourceTree = "<group>"; };
-		9FFB70F21BEA642E00B02E29 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		9FFB70F81BEB616100B02E29 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = Ressources/en.lproj; sourceTree = "<group>"; };
+		9FFB70F91BEB616100B02E29 /* fr.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fr.lproj; path = Ressources/fr.lproj; sourceTree = "<group>"; };
+		9FFB70FA1BEB616100B02E29 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Ressources/images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 			children = (
 				9FFB70E61BEA608200B02E29 /* KRSafariActivity.h */,
 				9FFB70E81BEA608200B02E29 /* Info.plist */,
-				9FFB70F01BEA62FC00B02E29 /* strings.strings */,
-				9FFB70F21BEA642E00B02E29 /* images.xcassets */,
+				9FFB70F81BEB616100B02E29 /* en.lproj */,
+				9FFB70F91BEB616100B02E29 /* fr.lproj */,
+				9FFB70FA1BEB616100B02E29 /* images.xcassets */,
 				9FFB70EE1BEA612B00B02E29 /* KRSafariActivity.swift */,
 			);
 			path = KRSafariActivity;
@@ -104,6 +107,7 @@
 				TargetAttributes = {
 					9FFB70E21BEA608200B02E29 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = RDW68XGXCG;
 					};
 				};
 			};
@@ -113,6 +117,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 9FFB70D91BEA608200B02E29;
 			productRefGroup = 9FFB70E41BEA608200B02E29 /* Products */;
@@ -129,8 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FFB70F11BEA62FC00B02E29 /* strings.strings in Resources */,
-				9FFB70F31BEA642E00B02E29 /* images.xcassets in Resources */,
+				9FFB70FD1BEB616100B02E29 /* images.xcassets in Resources */,
+				9FFB70FB1BEB616100B02E29 /* en.lproj in Resources */,
+				9FFB70FC1BEB616100B02E29 /* fr.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -260,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -293,6 +301,7 @@
 				9FFB70ED1BEA608200B02E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
